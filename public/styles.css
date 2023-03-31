@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fbdd74;
+  font-family: 'Fraunces', serif;
+}
+
+button {
+  margin-left: 8px;
+  padding: 8px;
+  background-color: #294910;
+  border-radius: 6px;
+  border-style: none;
+  color: #fbdd74;
+  font-family: 'Fraunces', serif;
+}
+
+#list {
+  list-style: none;
+  padding: 0;
+  /* max-width: 400px;
+  width: 400%; */
+}
+.list-item {
+  border: 3px solid #294910;
+  /* background-color: rgb(76, 202, 25); */
+  border-radius: 6px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+ul li.checked {
+  text-decoration: line-through;
+}
+
+#new-task-title {
+  width: 250px;
+  border-radius: 6px;
+  padding: 8px;
+  border-style: none;
+}

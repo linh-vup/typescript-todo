@@ -4,6 +4,7 @@
     "build": "snowpack build"
   },
   "dependencies": {
+    "@snowpack/plugin-dotenv": "^2.2.0",
     "canvas-confetti": "^1.2.0",
     "uuid": "^9.0.0"
   },

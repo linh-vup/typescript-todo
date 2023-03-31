@@ -1,7 +1,5 @@
 import { v4 as uuidV4 } from 'uuid';
 
-console.log(uuidV4());
-
 type Task = {
   id: string;
   title: string;
@@ -40,16 +38,21 @@ function addListItem(task: Task) {
   const label = document.createElement('label');
   const checkbox = document.createElement('input');
   checkbox.type = 'checkbox';
-
   checkbox.checked = task.completed;
+
+  if (task.completed) {
+    item.classList.toggle('checked');
+  }
+
   label.append(checkbox, task.title);
   item.append(label);
   list?.append(item);
+  item.classList.add('list-item');
+
   checkbox.addEventListener('change', () => {
     task.completed = checkbox.checked;
     saveTasks();
     item.classList.toggle('checked');
-    // updateListItemStyle(item, checkbox);
   });
 }
 

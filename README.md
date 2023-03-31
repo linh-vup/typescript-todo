@@ -1,24 +1,21 @@
-# New Project
+# TypeScript To-Do
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
-## Available Scripts
+Codealong to Web Dev Simplified ['How To Build Your First TypeScript Project - TODO List Application'](https://youtu.be/jBmrduvKl5w) tutorial to practice TypeScript with some custom changes and styling.
 
-### npm start
+## Getting Started
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+- Install node modules: `npm i`
+- Run server: `npm start`
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+## Additions
 
-### npm run build
+In addition to the code-along, I added a class to list elements and styling to checked list items (`text-decoration: line-through;`). In order for it to change with the eventlistener, there's an additional line of code to toggle the class `checked` with each change, as well as adding adding a condition to toggle the class in the `addListItem()` function based on the value of the completed property of the task object.
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+I also added styling to the page to make it look less bleak.
 
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/main/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.mjs` config file.
-
-### Q: What about Eject?
-
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+Before:
+![To-Do project before](./src/before.png 'To-Do project before')
+After:
+![To-Do project after](./src/after.png 'To-Do project after')

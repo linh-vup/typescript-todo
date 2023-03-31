@@ -4,23 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="dist/index.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>TypeScript To-Do</title>
   </head>
-  <style>
-    #list {
-      list-style: none;
-      padding: 0;
-    }
-    ul li.checked {
-      text-decoration: line-through;
-    }
-  </style>
+
   <body>
-    <ul id="list"></ul>
-    <form action="" id="new-task-form">
-      <input type="text" id="new-task-title" />
-      <button type="submit">Add</button>
-    </form>
+    <h1>TypeScript To-Do</h1>
+    <div class="container">
+      <ul id="list"></ul>
+      <form action="" id="new-task-form">
+        <input type="text" id="new-task-title" />
+        <button type="submit">Add</button>
+      </form>
+    </div>
   </body>
 </html>

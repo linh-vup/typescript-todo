@@ -12,6 +12,7 @@ export default {
         ...(process.versions.pnp ? { tsc: 'yarn pnpify tsc' } : {}),
       },
     ],
+    ['@snowpack/plugin-dotenv'],
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
