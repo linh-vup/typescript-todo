@@ -13,7 +13,7 @@ Link to deployed version: [https://linhs-typescript-todo.netlify.app/](https://l
 
 ## Additions
 
-In addition to the code-along, I added a class to list elements and styling to checked list items (`text-decoration: line-through;`). In order for it to change with the eventlistener, there's an additional line of code to toggle the class `checked` with each change, as well as adding adding a condition to toggle the class in the `addListItem()` function based on the value of the completed property of the task object.
+In addition to the codealong, I added ids and classes to elements and styling to checked list items (`text-decoration: line-through;`). In order for it to change with the `eventListener`, there's an additional line of code to toggle the class `checked` with each change, as well as adding a condition to toggle the class in the `addListItem()` function based on the value of the completed property of the task object.
 
 I also added styling to the page to make it look less bleak.
 
